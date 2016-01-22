@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('NodejsBlog:server');
+var debug = require('debug')('shake:server');
 var http = require('http');
 
 /**

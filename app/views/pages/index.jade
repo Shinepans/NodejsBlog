@@ -1,0 +1,20 @@
+extends ../layout
+
+block content
+    .container
+        .row
+            each blog in posts
+                .panel.panel-default
+                    .panel-heading
+                        .panel-body
+                            if (blog.title)
+                                .card
+                                    .title
+                                        a(href='#',style="font-size:25px") #{blog.title}
+                                    .info
+                                        p 
+                                        h5 作者:
+                                            a(href='#') #{blog.name}
+                                        p 内容: #{blog.post}
+                                        p 日期: #{blog.time.minute}
+                    
